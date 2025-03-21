@@ -1,10 +1,6 @@
 import { Hero } from "@/components/Hero";
 import { Features } from "@/components/Features";
-import { Mobile3D } from "@/components/Mobile3D";
 import { Footer } from "@/components/Footer";
-import { GlareCard } from "@/components/ui/glare-card";
-import Image from "next/image";
-import Cards from "@/components/Cards";
 export default function Home() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-black">
