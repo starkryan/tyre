@@ -1,11 +1,52 @@
-import React from 'react'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
+import { Button } from "@/components/ui/button"
 
-function Contact() {
+export default function ContactPage() {
   return (
-    <div>
-        <h1>Contact</h1>
+    <div className="container mx-auto px-4 py-16">
+      <div className="max-w-2xl mx-auto">
+        <Card className="bg-black/50 border-purple-500/20">
+          <CardHeader>
+            <CardTitle className="text-4xl font-bold bg-gradient-to-r from-pink-500 via-purple-400 to-pink-500 bg-clip-text text-transparent">
+              Contact Us
+            </CardTitle>
+            <CardDescription className="text-gray-400">
+              Have a question? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <form className="space-y-6">
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-gray-200">Name</label>
+                <Input 
+                  placeholder="Your name" 
+                  className="bg-black/30 border-purple-500/20 focus:border-purple-500/50"
+                />
+              </div>
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-gray-200">Email</label>
+                <Input 
+                  type="email" 
+                  placeholder="your@email.com" 
+                  className="bg-black/30 border-purple-500/20 focus:border-purple-500/50"
+                />
+              </div>
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-gray-200">Message</label>
+                <Textarea 
+                  placeholder="Your message" 
+                  className="min-h-[150px] bg-black/30 border-purple-500/20 focus:border-purple-500/50"
+                />
+              </div>
+              <Button className="w-full bg-purple-500 hover:bg-purple-600 text-white">
+                Send Message
+              </Button>
+            </form>
+          </CardContent>
+        </Card>
+      </div>
     </div>
   )
 }
-
-export default Contact
