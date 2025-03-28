@@ -25,6 +25,7 @@ const footerLinks = [
       { label: "Privacy Policy", href: "/privacy-policy" },
       { label: "Terms of Service", href: "/terms" },
       { label: "FAQ", href: "/faq" },
+      {label: "Child Safety Policy", href: "/child-safety-policy"}
     ]
   }
 ];
