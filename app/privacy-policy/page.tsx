@@ -5,26 +5,51 @@ export default function PrivacyPolicyPage() {
   const sections = [
     {
       title: "Information We Collect",
-      content: "We collect information that you provide directly to us, including but not limited to your name, email address, and usage data. This helps us provide and improve our services."
+      content:
+        "Luvsab uses anonymous login through Firebase. We do not collect or store any personally identifiable information. Your interactions with the AI remain private and are stored only on your device using local storage.",
     },
     {
-      title: "How We Use Your Information",
-      content: "We use the information we collect to provide, maintain, and improve our services, to develop new ones, and to protect Luvsab and our users."
+      title: "Use of Collected Information",
+      content:
+        "We do not collect or track any personal data. All messages and preferences are stored locally on your device to provide a personalized experience without compromising your privacy.",
+    },
+    {
+      title: "AI Interactions and Data",
+      content:
+        "Your conversations with the AI are processed in real-time and are not stored on our servers. We do not analyze or share chat history, and your messages are never used for advertising or third-party purposes.",
     },
     {
       title: "Information Sharing",
-      content: "We do not share your personal information with companies, organizations, or individuals outside of Luvsab except in the following cases: with your consent, for legal reasons, or with trusted partners who assist us in operating our service."
+      content:
+        "Since we do not collect or store personal data, there is nothing to share. We do not sell, rent, or disclose your data to any third parties.",
     },
     {
       title: "Data Security",
-      content: "We work hard to protect Luvsab and our users from unauthorized access to or unauthorized alteration, disclosure, or destruction of information we hold."
+      content:
+        "All your chat data stays on your own device. We use secure communication methods when necessary, but since there's no server-side data, the risk of data breaches is minimized.",
     },
     {
-      title: "Your Rights",
-      content: "You have the right to access, update, or delete your information at any time. You can do this through your account settings or by contacting our support team."
-    }
+      title: "Your Privacy Rights",
+      content:
+        "You are always in control. You can clear your chat history anytime by using the app’s built-in features or clearing your local storage manually.",
+    },
+    {
+      title: "Children’s Privacy",
+      content:
+        "Luvsab is intended for users aged 18 and older. We do not knowingly collect any data from children. If you believe a child has used the app, please contact us for guidance.",
+    },
+    {
+      title: "Policy Updates",
+      content:
+        "We may update this Privacy Policy from time to time. Any major changes will be reflected in the app and on our website, if applicable.",
+    },
+    {
+      title: "Contact Us",
+      content:
+        "If you have questions or concerns, feel free to reach out at support@luvsab.app.",
+    },
   ]
-
+  
   return (
     <div className="container mx-auto px-4 py-16">
       <div className="max-w-3xl mx-auto">
