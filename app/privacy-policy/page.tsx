@@ -24,6 +24,11 @@ export default function PrivacyPolicyPage() {
         "Since we do not collect or store personal data, there is nothing to share. We do not sell, rent, or disclose your data to any third parties.",
     },
     {
+      title: "User Reporting and Flagging",
+      content:
+        "To ensure a safe and respectful experience, Luvsab includes in-app tools that allow users to report or flag AI-generated content they find offensive, inappropriate, or misleading. Reported messages are reviewed internally to improve content quality and user safety. We do not collect personal data when you report a message.",
+    },
+    {
       title: "Data Security",
       content:
         "All your chat data stays on your own device. We use secure communication methods when necessary, but since there's no server-side data, the risk of data breaches is minimized.",
@@ -61,7 +66,7 @@ export default function PrivacyPolicyPage() {
           </CardHeader>
           <CardContent className="space-y-8">
             <p className="text-gray-400">
-              Last updated: March 21, 2024
+              Last updated: April 21, 2025
             </p>
             {sections.map((section, index) => (
               <div key={index} className="space-y-4">
